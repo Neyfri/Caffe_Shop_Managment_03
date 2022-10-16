@@ -1,0 +1,16 @@
+E:\AA_SolucionesSoftware\Coffe_Shop_Management\Coffe_Shop_Management\bin\Debug\Coffe_Shop_Management.exe.config
+E:\AA_SolucionesSoftware\Coffe_Shop_Management\Coffe_Shop_Management\bin\Debug\Coffe_Shop_Management.exe
+E:\AA_SolucionesSoftware\Coffe_Shop_Management\Coffe_Shop_Management\bin\Debug\Coffe_Shop_Management.pdb
+E:\AA_SolucionesSoftware\Coffe_Shop_Management\Coffe_Shop_Management\bin\Debug\Guna.UI2.dll
+E:\AA_SolucionesSoftware\Coffe_Shop_Management\Coffe_Shop_Management\obj\Debug\Coffe_Shop_Management.csproj.AssemblyReference.cache
+E:\AA_SolucionesSoftware\Coffe_Shop_Management\Coffe_Shop_Management\obj\Debug\Coffe_Shop_Management.csproj.SuggestedBindingRedirects.cache
+E:\AA_SolucionesSoftware\Coffe_Shop_Management\Coffe_Shop_Management\obj\Debug\Coffe_Shop_Management.Form1.resources
+E:\AA_SolucionesSoftware\Coffe_Shop_Management\Coffe_Shop_Management\obj\Debug\Coffe_Shop_Management.Properties.Resources.resources
+E:\AA_SolucionesSoftware\Coffe_Shop_Management\Coffe_Shop_Management\obj\Debug\Coffe_Shop_Management.csproj.GenerateResource.cache
+E:\AA_SolucionesSoftware\Coffe_Shop_Management\Coffe_Shop_Management\obj\Debug\Coffe_Shop_Management.csproj.CoreCompileInputs.cache
+E:\AA_SolucionesSoftware\Coffe_Shop_Management\Coffe_Shop_Management\obj\Debug\Coffe_Shop_Management.csproj.CopyComplete
+E:\AA_SolucionesSoftware\Coffe_Shop_Management\Coffe_Shop_Management\obj\Debug\Coffe_Shop_Management.exe
+E:\AA_SolucionesSoftware\Coffe_Shop_Management\Coffe_Shop_Management\obj\Debug\Coffe_Shop_Management.pdb
+E:\AA_SolucionesSoftware\Coffe_Shop_Management\Coffe_Shop_Management\bin\Debug\Bunifu.UI.WinForms.BunifuButton.dll
+E:\AA_SolucionesSoftware\Coffe_Shop_Management\Coffe_Shop_Management\bin\Debug\Bunifu.UI.WinForms.BunifuButton.xml
+E:\AA_SolucionesSoftware\Coffe_Shop_Management\Coffe_Shop_Management\obj\Debug\Coffe_Shop_Management.FRM_Login.resources
