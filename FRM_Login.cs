@@ -53,9 +53,7 @@ namespace Coffe_Shop_Management
 
         private void FRM_Login_Load(object sender, EventArgs e)
         {
-            if (checkBoxPass.Checked == true)
-                txtPass.UseSystemPasswordChar = false;
-            else txtPass.UseSystemPasswordChar = true;
+            
         }
     }
 }
