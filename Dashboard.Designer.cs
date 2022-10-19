@@ -33,11 +33,12 @@
             this.btnUser = new Guna.UI2.WinForms.Guna2Button();
             this.pnmove = new System.Windows.Forms.Panel();
             this.btnDetails = new Guna.UI2.WinForms.Guna2Button();
-            this.btnSaleR = new Guna.UI2.WinForms.Guna2Button();
             this.btnExit = new Guna.UI2.WinForms.Guna2Button();
             this.btnShop = new Guna.UI2.WinForms.Guna2Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.uC_Shop1 = new Coffe_Shop_Management.All_Controls.UC_Shop();
             this.uC_Users1 = new Coffe_Shop_Management.All_Controls.UC_Users();
+            this.uC_ShopDetails1 = new Coffe_Shop_Management.All_Controls.UC_ShopDetails();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -47,7 +48,6 @@
             this.panel1.Controls.Add(this.btnUser);
             this.panel1.Controls.Add(this.pnmove);
             this.panel1.Controls.Add(this.btnDetails);
-            this.panel1.Controls.Add(this.btnSaleR);
             this.panel1.Controls.Add(this.btnExit);
             this.panel1.Controls.Add(this.btnShop);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -72,7 +72,7 @@
             this.btnUser.Image = ((System.Drawing.Image)(resources.GetObject("btnUser.Image")));
             this.btnUser.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnUser.ImageSize = new System.Drawing.Size(32, 32);
-            this.btnUser.Location = new System.Drawing.Point(496, 12);
+            this.btnUser.Location = new System.Drawing.Point(376, 12);
             this.btnUser.Name = "btnUser";
             this.btnUser.ShadowDecoration.Parent = this.btnUser;
             this.btnUser.Size = new System.Drawing.Size(209, 57);
@@ -83,7 +83,7 @@
             // pnmove
             // 
             this.pnmove.BackColor = System.Drawing.Color.Gold;
-            this.pnmove.Location = new System.Drawing.Point(27, 75);
+            this.pnmove.Location = new System.Drawing.Point(112, 75);
             this.pnmove.Name = "pnmove";
             this.pnmove.Size = new System.Drawing.Size(159, 5);
             this.pnmove.TabIndex = 0;
@@ -104,37 +104,13 @@
             this.btnDetails.Image = ((System.Drawing.Image)(resources.GetObject("btnDetails.Image")));
             this.btnDetails.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnDetails.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnDetails.Location = new System.Drawing.Point(737, 12);
+            this.btnDetails.Location = new System.Drawing.Point(691, 12);
             this.btnDetails.Name = "btnDetails";
             this.btnDetails.ShadowDecoration.Parent = this.btnDetails;
             this.btnDetails.Size = new System.Drawing.Size(209, 57);
             this.btnDetails.TabIndex = 4;
             this.btnDetails.Text = "Shop  Details";
             this.btnDetails.Click += new System.EventHandler(this.btnDetails_Click);
-            // 
-            // btnSaleR
-            // 
-            this.btnSaleR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(81)))), ((int)(((byte)(101)))));
-            this.btnSaleR.BorderRadius = 23;
-            this.btnSaleR.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.btnSaleR.CheckedState.Parent = this.btnSaleR;
-            this.btnSaleR.CustomImages.Parent = this.btnSaleR;
-            this.btnSaleR.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(81)))), ((int)(((byte)(101)))));
-            this.btnSaleR.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSaleR.ForeColor = System.Drawing.Color.White;
-            this.btnSaleR.HoverState.FillColor = System.Drawing.Color.White;
-            this.btnSaleR.HoverState.ForeColor = System.Drawing.Color.Black;
-            this.btnSaleR.HoverState.Parent = this.btnSaleR;
-            this.btnSaleR.Image = ((System.Drawing.Image)(resources.GetObject("btnSaleR.Image")));
-            this.btnSaleR.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnSaleR.ImageSize = new System.Drawing.Size(25, 25);
-            this.btnSaleR.Location = new System.Drawing.Point(249, 12);
-            this.btnSaleR.Name = "btnSaleR";
-            this.btnSaleR.ShadowDecoration.Parent = this.btnSaleR;
-            this.btnSaleR.Size = new System.Drawing.Size(209, 57);
-            this.btnSaleR.TabIndex = 3;
-            this.btnSaleR.Text = "Sales Report";
-            this.btnSaleR.Click += new System.EventHandler(this.btnSaleR_Click);
             // 
             // btnExit
             // 
@@ -169,7 +145,7 @@
             this.btnShop.Image = ((System.Drawing.Image)(resources.GetObject("btnShop.Image")));
             this.btnShop.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnShop.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnShop.Location = new System.Drawing.Point(3, 12);
+            this.btnShop.Location = new System.Drawing.Point(88, 12);
             this.btnShop.Name = "btnShop";
             this.btnShop.ShadowDecoration.Parent = this.btnShop;
             this.btnShop.Size = new System.Drawing.Size(209, 57);
@@ -179,12 +155,24 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.uC_ShopDetails1);
+            this.panel2.Controls.Add(this.uC_Shop1);
             this.panel2.Controls.Add(this.uC_Users1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 106);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1006, 414);
             this.panel2.TabIndex = 1;
+            // 
+            // uC_Shop1
+            // 
+            this.uC_Shop1.BackColor = System.Drawing.Color.White;
+            this.uC_Shop1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uC_Shop1.Location = new System.Drawing.Point(0, 0);
+            this.uC_Shop1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uC_Shop1.Name = "uC_Shop1";
+            this.uC_Shop1.Size = new System.Drawing.Size(1006, 414);
+            this.uC_Shop1.TabIndex = 1;
             // 
             // uC_Users1
             // 
@@ -195,6 +183,15 @@
             this.uC_Users1.Name = "uC_Users1";
             this.uC_Users1.Size = new System.Drawing.Size(1006, 416);
             this.uC_Users1.TabIndex = 0;
+            // 
+            // uC_ShopDetails1
+            // 
+            this.uC_ShopDetails1.BackColor = System.Drawing.Color.White;
+            this.uC_ShopDetails1.Location = new System.Drawing.Point(0, 0);
+            this.uC_ShopDetails1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.uC_ShopDetails1.Name = "uC_ShopDetails1";
+            this.uC_ShopDetails1.Size = new System.Drawing.Size(1006, 414);
+            this.uC_ShopDetails1.TabIndex = 2;
             // 
             // Dashboard
             // 
@@ -223,10 +220,11 @@
         private Guna.UI2.WinForms.Guna2Button btnShop;
         private Guna.UI2.WinForms.Guna2Button btnExit;
         private Guna.UI2.WinForms.Guna2Button btnDetails;
-        private Guna.UI2.WinForms.Guna2Button btnSaleR;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel pnmove;
         private Guna.UI2.WinForms.Guna2Button btnUser;
         private All_Controls.UC_Users uC_Users1;
+        private All_Controls.UC_Shop uC_Shop1;
+        private All_Controls.UC_ShopDetails uC_ShopDetails1;
     }
 }

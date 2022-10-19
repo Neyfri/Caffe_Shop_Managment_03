@@ -12,7 +12,7 @@ namespace Coffe_Shop_Management
     internal class funtions
     {
         
-        protected SqlConnection getConnetion()
+        protected SqlConnection getConnection()
         {
             SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;database=coffeshop;Integrated Security=True;Connect Timeout=30");
             return conn;
@@ -20,7 +20,7 @@ namespace Coffe_Shop_Management
 
         public DataSet getData(string query) //Get data from database
         {
-            SqlConnection conn = getConnetion();
+            SqlConnection conn = getConnection();
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = conn;
             cmd.CommandText = query;
@@ -33,7 +33,7 @@ namespace Coffe_Shop_Management
         {
             try
             {
-                SqlConnection conn = getConnetion();
+                SqlConnection conn = getConnection();
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = conn;
                 conn.Open();

@@ -32,15 +32,12 @@
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -54,14 +51,13 @@
             this.txtUsername = new Guna.UI2.WinForms.Guna2TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.btnSearch = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.guna2TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtSearhByname = new Guna.UI2.WinForms.Guna2TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.dgvUserDetails = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.btnDelete = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.dgvUserDelete = new Bunifu.UI.WinForms.BunifuDataGridView();
-            this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.dgvUDelete = new Bunifu.UI.WinForms.BunifuDataGridView();
+            this.txtSearhById = new Guna.UI2.WinForms.Guna2TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.tabC1.SuspendLayout();
@@ -69,7 +65,7 @@
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUserDetails)).BeginInit();
             this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvUserDelete)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvUDelete)).BeginInit();
             this.SuspendLayout();
             // 
             // tabC1
@@ -255,8 +251,7 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.btnSearch);
-            this.tabPage2.Controls.Add(this.guna2TextBox4);
+            this.tabPage2.Controls.Add(this.txtSearhByname);
             this.tabPage2.Controls.Add(this.label5);
             this.tabPage2.Controls.Add(this.dgvUserDetails);
             this.tabPage2.Location = new System.Drawing.Point(4, 29);
@@ -267,103 +262,40 @@
             this.tabPage2.Text = "User Details";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // btnSearch
+            // txtSearhByname
             // 
-            this.btnSearch.AllowToggling = false;
-            this.btnSearch.AnimationSpeed = 200;
-            this.btnSearch.AutoGenerateColors = false;
-            this.btnSearch.BackColor = System.Drawing.Color.Transparent;
-            this.btnSearch.BackColor1 = System.Drawing.Color.DodgerBlue;
-            this.btnSearch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSearch.BackgroundImage")));
-            this.btnSearch.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnSearch.ButtonText = "Search";
-            this.btnSearch.ButtonTextMarginLeft = 0;
-            this.btnSearch.ColorContrastOnClick = 45;
-            this.btnSearch.ColorContrastOnHover = 45;
-            this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.btnSearch.CustomizableEdges = borderEdges2;
-            this.btnSearch.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnSearch.DisabledBorderColor = System.Drawing.Color.Empty;
-            this.btnSearch.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.btnSearch.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.btnSearch.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btnSearch.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.ForeColor = System.Drawing.Color.White;
-            this.btnSearch.IconLeftCursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSearch.IconMarginLeft = 11;
-            this.btnSearch.IconPadding = 10;
-            this.btnSearch.IconRightCursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSearch.IdleBorderColor = System.Drawing.Color.DodgerBlue;
-            this.btnSearch.IdleBorderRadius = 44;
-            this.btnSearch.IdleBorderThickness = 1;
-            this.btnSearch.IdleFillColor = System.Drawing.Color.DodgerBlue;
-            this.btnSearch.IdleIconLeftImage = null;
-            this.btnSearch.IdleIconRightImage = null;
-            this.btnSearch.IndicateFocus = false;
-            this.btnSearch.Location = new System.Drawing.Point(750, 28);
-            this.btnSearch.Name = "btnSearch";
-            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            stateProperties3.BorderRadius = 44;
-            stateProperties3.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties3.BorderThickness = 1;
-            stateProperties3.FillColor = System.Drawing.Color.LimeGreen;
-            stateProperties3.ForeColor = System.Drawing.Color.White;
-            stateProperties3.IconLeftImage = null;
-            stateProperties3.IconRightImage = null;
-            this.btnSearch.onHoverState = stateProperties3;
-            stateProperties4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties4.BorderRadius = 44;
-            stateProperties4.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties4.BorderThickness = 1;
-            stateProperties4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties4.ForeColor = System.Drawing.Color.White;
-            stateProperties4.IconLeftImage = null;
-            stateProperties4.IconRightImage = null;
-            this.btnSearch.OnPressedState = stateProperties4;
-            this.btnSearch.Size = new System.Drawing.Size(114, 45);
-            this.btnSearch.TabIndex = 6;
-            this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnSearch.TextMarginLeft = 0;
-            this.btnSearch.UseDefaultRadiusAndThickness = true;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
-            // 
-            // guna2TextBox4
-            // 
-            this.guna2TextBox4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox4.DefaultText = "";
-            this.guna2TextBox4.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.DisabledState.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.FocusedState.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.HoverState.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.Location = new System.Drawing.Point(250, 33);
-            this.guna2TextBox4.Margin = new System.Windows.Forms.Padding(9, 12, 9, 12);
-            this.guna2TextBox4.Name = "guna2TextBox4";
-            this.guna2TextBox4.PasswordChar = '\0';
-            this.guna2TextBox4.PlaceholderText = "";
-            this.guna2TextBox4.SelectedText = "";
-            this.guna2TextBox4.ShadowDecoration.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.Size = new System.Drawing.Size(488, 40);
-            this.guna2TextBox4.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.guna2TextBox4.TabIndex = 5;
+            this.txtSearhByname.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSearhByname.DefaultText = "";
+            this.txtSearhByname.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtSearhByname.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtSearhByname.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSearhByname.DisabledState.Parent = this.txtSearhByname;
+            this.txtSearhByname.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSearhByname.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSearhByname.FocusedState.Parent = this.txtSearhByname;
+            this.txtSearhByname.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearhByname.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSearhByname.HoverState.Parent = this.txtSearhByname;
+            this.txtSearhByname.Location = new System.Drawing.Point(250, 33);
+            this.txtSearhByname.Margin = new System.Windows.Forms.Padding(9, 12, 9, 12);
+            this.txtSearhByname.Name = "txtSearhByname";
+            this.txtSearhByname.PasswordChar = '\0';
+            this.txtSearhByname.PlaceholderText = "";
+            this.txtSearhByname.SelectedText = "";
+            this.txtSearhByname.ShadowDecoration.Parent = this.txtSearhByname;
+            this.txtSearhByname.Size = new System.Drawing.Size(488, 40);
+            this.txtSearhByname.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.txtSearhByname.TabIndex = 5;
+            this.txtSearhByname.TextChanged += new System.EventHandler(this.txtSearhByname_TextChanged);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(255, 14);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(86, 20);
+            this.label5.Size = new System.Drawing.Size(166, 20);
             this.label5.TabIndex = 4;
-            this.label5.Text = "Search by:";
+            this.label5.Text = "Search by UserName:";
             // 
             // dgvUserDetails
             // 
@@ -414,20 +346,20 @@
             this.dgvUserDetails.HeaderBackColor = System.Drawing.Color.DodgerBlue;
             this.dgvUserDetails.HeaderBgColor = System.Drawing.Color.Empty;
             this.dgvUserDetails.HeaderForeColor = System.Drawing.Color.White;
-            this.dgvUserDetails.Location = new System.Drawing.Point(26, 89);
+            this.dgvUserDetails.Location = new System.Drawing.Point(147, 88);
             this.dgvUserDetails.Name = "dgvUserDetails";
             this.dgvUserDetails.RowHeadersVisible = false;
             this.dgvUserDetails.RowTemplate.Height = 40;
             this.dgvUserDetails.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvUserDetails.Size = new System.Drawing.Size(947, 196);
+            this.dgvUserDetails.Size = new System.Drawing.Size(696, 212);
             this.dgvUserDetails.TabIndex = 0;
             this.dgvUserDetails.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             // 
             // tabPage3
             // 
             this.tabPage3.Controls.Add(this.btnDelete);
-            this.tabPage3.Controls.Add(this.dgvUserDelete);
-            this.tabPage3.Controls.Add(this.guna2TextBox3);
+            this.tabPage3.Controls.Add(this.dgvUDelete);
+            this.tabPage3.Controls.Add(this.txtSearhById);
             this.tabPage3.Controls.Add(this.label3);
             this.tabPage3.Location = new System.Drawing.Point(4, 29);
             this.tabPage3.Name = "tabPage3";
@@ -451,11 +383,11 @@
             this.btnDelete.ColorContrastOnClick = 45;
             this.btnDelete.ColorContrastOnHover = 45;
             this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges3.BottomLeft = true;
-            borderEdges3.BottomRight = true;
-            borderEdges3.TopLeft = true;
-            borderEdges3.TopRight = true;
-            this.btnDelete.CustomizableEdges = borderEdges3;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.btnDelete.CustomizableEdges = borderEdges2;
             this.btnDelete.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnDelete.DisabledBorderColor = System.Drawing.Color.Empty;
             this.btnDelete.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -476,40 +408,42 @@
             this.btnDelete.IndicateFocus = false;
             this.btnDelete.Location = new System.Drawing.Point(635, 34);
             this.btnDelete.Name = "btnDelete";
-            stateProperties5.BorderColor = System.Drawing.Color.Red;
-            stateProperties5.BorderRadius = 44;
-            stateProperties5.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties5.BorderThickness = 1;
-            stateProperties5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            stateProperties5.ForeColor = System.Drawing.Color.White;
-            stateProperties5.IconLeftImage = null;
-            stateProperties5.IconRightImage = null;
-            this.btnDelete.onHoverState = stateProperties5;
-            stateProperties6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties6.BorderRadius = 44;
-            stateProperties6.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties6.BorderThickness = 1;
-            stateProperties6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties6.ForeColor = System.Drawing.Color.White;
-            stateProperties6.IconLeftImage = null;
-            stateProperties6.IconRightImage = null;
-            this.btnDelete.OnPressedState = stateProperties6;
+            stateProperties3.BorderColor = System.Drawing.Color.Red;
+            stateProperties3.BorderRadius = 44;
+            stateProperties3.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            stateProperties3.BorderThickness = 1;
+            stateProperties3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            stateProperties3.ForeColor = System.Drawing.Color.White;
+            stateProperties3.IconLeftImage = null;
+            stateProperties3.IconRightImage = null;
+            this.btnDelete.onHoverState = stateProperties3;
+            stateProperties4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            stateProperties4.BorderRadius = 44;
+            stateProperties4.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            stateProperties4.BorderThickness = 1;
+            stateProperties4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            stateProperties4.ForeColor = System.Drawing.Color.White;
+            stateProperties4.IconLeftImage = null;
+            stateProperties4.IconRightImage = null;
+            this.btnDelete.OnPressedState = stateProperties4;
             this.btnDelete.Size = new System.Drawing.Size(114, 45);
             this.btnDelete.TabIndex = 7;
             this.btnDelete.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnDelete.TextMarginLeft = 0;
             this.btnDelete.UseDefaultRadiusAndThickness = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
-            // dgvUserDelete
+            // dgvUDelete
             // 
-            this.dgvUserDelete.AllowCustomTheming = false;
+            this.dgvUDelete.AllowCustomTheming = false;
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            this.dgvUserDelete.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.dgvUserDelete.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvUserDelete.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvUserDelete.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dgvUserDelete.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgvUDelete.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.dgvUDelete.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvUDelete.BackgroundColor = System.Drawing.Color.White;
+            this.dgvUDelete.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dgvUDelete.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgvUDelete.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle5.BackColor = System.Drawing.Color.DodgerBlue;
             dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
@@ -517,24 +451,24 @@
             dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvUserDelete.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            this.dgvUserDelete.ColumnHeadersHeight = 40;
-            this.dgvUserDelete.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
-            this.dgvUserDelete.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.dgvUserDelete.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.dgvUserDelete.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            this.dgvUserDelete.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgvUserDelete.CurrentTheme.BackColor = System.Drawing.Color.White;
-            this.dgvUserDelete.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.dgvUserDelete.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.DodgerBlue;
-            this.dgvUserDelete.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            this.dgvUserDelete.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dgvUserDelete.CurrentTheme.Name = null;
-            this.dgvUserDelete.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.dgvUserDelete.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.dgvUserDelete.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.dgvUserDelete.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            this.dgvUserDelete.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvUDelete.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.dgvUDelete.ColumnHeadersHeight = 40;
+            this.dgvUDelete.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            this.dgvUDelete.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.dgvUDelete.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.dgvUDelete.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            this.dgvUDelete.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvUDelete.CurrentTheme.BackColor = System.Drawing.Color.White;
+            this.dgvUDelete.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.dgvUDelete.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.DodgerBlue;
+            this.dgvUDelete.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            this.dgvUDelete.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dgvUDelete.CurrentTheme.Name = null;
+            this.dgvUDelete.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgvUDelete.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.dgvUDelete.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.dgvUDelete.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            this.dgvUDelete.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
@@ -542,45 +476,47 @@
             dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvUserDelete.DefaultCellStyle = dataGridViewCellStyle6;
-            this.dgvUserDelete.EnableHeadersVisualStyles = false;
-            this.dgvUserDelete.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.dgvUserDelete.HeaderBackColor = System.Drawing.Color.DodgerBlue;
-            this.dgvUserDelete.HeaderBgColor = System.Drawing.Color.Empty;
-            this.dgvUserDelete.HeaderForeColor = System.Drawing.Color.White;
-            this.dgvUserDelete.Location = new System.Drawing.Point(71, 86);
-            this.dgvUserDelete.Name = "dgvUserDelete";
-            this.dgvUserDelete.RowHeadersVisible = false;
-            this.dgvUserDelete.RowTemplate.Height = 40;
-            this.dgvUserDelete.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvUserDelete.Size = new System.Drawing.Size(856, 201);
-            this.dgvUserDelete.TabIndex = 4;
-            this.dgvUserDelete.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
+            this.dgvUDelete.DefaultCellStyle = dataGridViewCellStyle6;
+            this.dgvUDelete.EnableHeadersVisualStyles = false;
+            this.dgvUDelete.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.dgvUDelete.HeaderBackColor = System.Drawing.Color.DodgerBlue;
+            this.dgvUDelete.HeaderBgColor = System.Drawing.Color.Empty;
+            this.dgvUDelete.HeaderForeColor = System.Drawing.Color.White;
+            this.dgvUDelete.Location = new System.Drawing.Point(71, 86);
+            this.dgvUDelete.Name = "dgvUDelete";
+            this.dgvUDelete.RowHeadersVisible = false;
+            this.dgvUDelete.RowTemplate.Height = 40;
+            this.dgvUDelete.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvUDelete.Size = new System.Drawing.Size(856, 201);
+            this.dgvUDelete.TabIndex = 4;
+            this.dgvUDelete.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
+            this.dgvUDelete.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUDelete_CellContentClick);
             // 
-            // guna2TextBox3
+            // txtSearhById
             // 
-            this.guna2TextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox3.DefaultText = "";
-            this.guna2TextBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.DisabledState.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.FocusedState.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.HoverState.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.Location = new System.Drawing.Point(267, 47);
-            this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
-            this.guna2TextBox3.Name = "guna2TextBox3";
-            this.guna2TextBox3.PasswordChar = '\0';
-            this.guna2TextBox3.PlaceholderText = "";
-            this.guna2TextBox3.SelectedText = "";
-            this.guna2TextBox3.ShadowDecoration.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.Size = new System.Drawing.Size(325, 26);
-            this.guna2TextBox3.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.guna2TextBox3.TabIndex = 3;
+            this.txtSearhById.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSearhById.DefaultText = "";
+            this.txtSearhById.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtSearhById.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtSearhById.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSearhById.DisabledState.Parent = this.txtSearhById;
+            this.txtSearhById.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSearhById.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSearhById.FocusedState.Parent = this.txtSearhById;
+            this.txtSearhById.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearhById.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSearhById.HoverState.Parent = this.txtSearhById;
+            this.txtSearhById.Location = new System.Drawing.Point(267, 47);
+            this.txtSearhById.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.txtSearhById.Name = "txtSearhById";
+            this.txtSearhById.PasswordChar = '\0';
+            this.txtSearhById.PlaceholderText = "";
+            this.txtSearhById.SelectedText = "";
+            this.txtSearhById.ShadowDecoration.Parent = this.txtSearhById;
+            this.txtSearhById.Size = new System.Drawing.Size(325, 26);
+            this.txtSearhById.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.txtSearhById.TabIndex = 3;
+            this.txtSearhById.TextChanged += new System.EventHandler(this.txtSearhById_TextChanged);
             // 
             // label3
             // 
@@ -595,7 +531,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Navy;
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label6.Location = new System.Drawing.Point(414, 16);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(143, 56);
@@ -613,6 +549,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "UC_Users";
             this.Size = new System.Drawing.Size(1006, 414);
+            this.Load += new System.EventHandler(this.UC_Users_Load);
             this.tabC1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
@@ -621,7 +558,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvUserDetails)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvUserDelete)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvUDelete)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -641,12 +578,11 @@
         private System.Windows.Forms.TabPage tabPage2;
         private Bunifu.UI.WinForms.BunifuDataGridView dgvUserDetails;
         private System.Windows.Forms.TabPage tabPage3;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
+        private Guna.UI2.WinForms.Guna2TextBox txtSearhById;
         private System.Windows.Forms.Label label3;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox4;
+        private Guna.UI2.WinForms.Guna2TextBox txtSearhByname;
         private System.Windows.Forms.Label label5;
-        private Bunifu.UI.WinForms.BunifuDataGridView dgvUserDelete;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnSearch;
+        private Bunifu.UI.WinForms.BunifuDataGridView dgvUDelete;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnDelete;
         private System.Windows.Forms.Label label6;
     }

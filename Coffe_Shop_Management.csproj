@@ -42,11 +42,28 @@
     <Reference Include="Guna.UI2">
       <HintPath>..\..\..\Downloads\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna.UI-Framework-Lib-master\Guna.UI2 WinForms\.net 4.0\Guna.UI2.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\MicrosoftReportViewerWebForms.11.0.0.0\lib\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Cquential.Microsoft.ReportViewer.DataVisualization.10.0.40219.1\lib\net35\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\MicrosoftReportViewerWebForms.11.0.0.0\lib\Microsoft.ReportViewer.ProcessingObjectModel.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\MicrosoftReportViewerWebForms.11.0.0.0\lib\Microsoft.ReportViewer.WebForms.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -58,6 +75,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="All Controls\UC_SalesReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="All Controls\UC_SalesReport.Designer.cs">
+      <DependentUpon>UC_SalesReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="All Controls\UC_Shop.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="All Controls\UC_Shop.Designer.cs">
+      <DependentUpon>UC_Shop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="All Controls\UC_ShopDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="All Controls\UC_ShopDetails.Designer.cs">
+      <DependentUpon>UC_ShopDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="All Controls\UC_Users.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -79,6 +114,15 @@
     <Compile Include="funtions.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="All Controls\UC_SalesReport.resx">
+      <DependentUpon>UC_SalesReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="All Controls\UC_Shop.resx">
+      <DependentUpon>UC_Shop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="All Controls\UC_ShopDetails.resx">
+      <DependentUpon>UC_ShopDetails.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="All Controls\UC_Users.resx">
       <DependentUpon>UC_Users.cs</DependentUpon>
     </EmbeddedResource>
@@ -97,6 +141,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -18,3 +18,10 @@ E:\AA_SolucionesSoftware\Coffe_Shop_Management\Coffe_Shop_Management\bin\Debug\B
 E:\AA_SolucionesSoftware\Coffe_Shop_Management\Coffe_Shop_Management\bin\Debug\Bunifu.Core.dll
 E:\AA_SolucionesSoftware\Coffe_Shop_Management\Coffe_Shop_Management\bin\Debug\Bunifu.UI.WinForms.BunifuDataGridView.xml
 E:\AA_SolucionesSoftware\Coffe_Shop_Management\Coffe_Shop_Management\obj\Debug\Coffe_Shop_Management.All_Controls.UC_Users.resources
+E:\AA_SolucionesSoftware\Coffe_Shop_Management\Coffe_Shop_Management\obj\Debug\Coffe_Shop_Management.All_Controls.UC_ShopDetails.resources
+E:\AA_SolucionesSoftware\Coffe_Shop_Management\Coffe_Shop_Management\obj\Debug\Coffe_Shop_Management.All_Controls.UC_Shop.resources
+E:\AA_SolucionesSoftware\Coffe_Shop_Management\Coffe_Shop_Management\obj\Debug\Coffe_Shop_Management.All_Controls.UC_SalesReport.resources
+E:\AA_SolucionesSoftware\Coffe_Shop_Management\Coffe_Shop_Management\bin\Debug\Microsoft.ReportViewer.Common.dll
+E:\AA_SolucionesSoftware\Coffe_Shop_Management\Coffe_Shop_Management\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+E:\AA_SolucionesSoftware\Coffe_Shop_Management\Coffe_Shop_Management\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+E:\AA_SolucionesSoftware\Coffe_Shop_Management\Coffe_Shop_Management\bin\Debug\Microsoft.ReportViewer.WebForms.DLL

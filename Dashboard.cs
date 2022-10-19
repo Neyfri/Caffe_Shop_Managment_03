@@ -28,11 +28,8 @@ namespace Coffe_Shop_Management
         private void btnShop_Click(object sender, EventArgs e)
         {
             pnmove.Left = btnShop.Left + 24;
-        }
-
-        private void btnSaleR_Click(object sender, EventArgs e)
-        {
-            pnmove.Left = btnSaleR.Left + 24;
+            uC_Shop1.Visible = true;
+            uC_Shop1.BringToFront();
         }
 
         private void btnUser_Click(object sender, EventArgs e)
@@ -45,11 +42,15 @@ namespace Coffe_Shop_Management
         private void btnDetails_Click(object sender, EventArgs e)
         {
             pnmove.Left = btnDetails.Left + 25;
+            uC_ShopDetails1.Visible = true;
+            uC_ShopDetails1.BringToFront();
+
         }
 
         private void Dashboard_Load(object sender, EventArgs e)
         {
             uC_Users1.Visible = false;
+            uC_ShopDetails1.Visible = false;
         }
     }
 }
